@@ -3,7 +3,7 @@ from jinja2 import Environment, FileSystemLoader
 
 
 def main():
-    with open("attempt.yaml", encoding='utf-8') as data_file:
+    with open("resume.yaml", encoding='utf-8') as data_file:
         resume_data = yaml.safe_load(data_file)
 
     env = Environment(loader=FileSystemLoader("."))
