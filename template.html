@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="style.css" rel="stylesheet" />
+    <title>{{ name }}</title>
+  </head>
+  <body>
+    <div class="a4-page">
+      <div id="header">
+        <h1>{{ name }}</h1>
+      </div>
+
+      <div class="flex-container">
+        <div class="box box-1">
+          <h2 style="margin-top: 0;">Contact</h2>
+          <ul class="fa-ul main-list">
+            <li>
+              <span class="fa-li"><i class="fas fa-envelope"></i></span>
+              {{details.email}}
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-phone"></i></span
+              >{{details.telephone}}
+            </li>
+            <li>
+              <span class="fa-li"><i class="fas fa-house"></i></span
+              >{{details.address}}
+            </li>
+          </ul>
+
+          <h2>Skills</h2>
+
+          <ul class="main-list">
+            {% for skill in skills %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+
+          <h2>Qualities</h2>
+
+          <ul class="main-list">
+            {% for quality in qualities %}
+            <li>{{ quality }}</li>
+            {% endfor %}
+          </ul>
+
+          <h2>Languages</h2>
+
+          <ul class="main-list">
+            {% for language in languages %}
+            <li>{{ language }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="box box-2">
+          <h2 style="margin-top: 0;">Summary</h2>
+          {% for paragraph in intro %}
+          <p>{{ paragraph }}</p>
+          {% endfor %}
+
+          <h2>Experience</h2>
+
+          <ul class="main-list">
+            {% for job in experience %}
+            <li>
+              <strong>{{ job.title }}</strong>, {{ job.company }}<br />
+              <span class="period">{{ job.start }} - {{ job.end }}</span>
+              <ul>
+                {% for item in job.description %}
+                <li>{{item}}</li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+          </ul>
+
+          <h2>Education</h2>
+
+          <ul class="main-list">
+            {% for degree in education %}
+            <li>
+              <strong>{{ degree.title }}</strong>, {{ degree.institute }},
+              {{degree.period}}<br />
+              <ul>
+                {% for item in degree.details %}
+                <li>{{item}}</li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

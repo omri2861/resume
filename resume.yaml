@@ -1,0 +1,74 @@
+name: Omri Levy
+details:
+  email: omri2861@gmail.com
+  telephone: 054-4810020
+  address: Tel-Aviv
+intro:
+  - "I just finished 7 years of military service in 8200 Unit. During my service, I specialized in security research and development. I loved to dive deep into various knowledge fields and learn as much as I could. I found my strength in understanding complex systems, defining precise requirements, and designing robust solutions and APIs for advanced large-scale development, while keeping attention to details. I am eager to face new challenges and innovate where I can!"
+  - "I’m looking for a position that will allow me to grow both professionally and personally, and I’m prepared to work hard and dive into the core problems of the company."
+experience:
+  - title: Software R&D Team Lead
+    company: 8200 Unit
+    start: Jun 2023
+    end: Nov 2024
+    description:
+      - Commanded over 6 soliders, managing multiple projects
+      - Required deep understanding of cyber security, operating systems and propietery complex system used by 8200
+      - Provided widely used libraries and tools for multiple security research teams
+      - Colaborated with multiple teams to bring the tools to maximum efficiency
+  - title: Software Engineer
+    company: 8200 Unit
+    start: Oct 2021
+    end: Jun 2023
+    description:
+      - I was in charge of importing existing tools from other groups in 8200, and developing the required abstractions for full integration with our existing systems
+      - Dived into deep networking problems, and optimized many aspects of the project to succeed in seamless integration
+  - title: Project Manager
+    company: 8200 Unit
+    start: Dec 2019
+    end: Oct 2020
+    description:
+      - Started a new project - A web application to run and manage remote tasks
+      - Managed the project from start, to POC, testing, and finally a fully working product
+      - Mapped the potential dangers in handing off advanced abilities to non power users, and implemented fail-safes
+      - Worked with multiple development teams, managed schedueles and development sprints
+  - title: Embedded Security R&D
+    company: 8200 Unit
+    start: Aug 2018
+    end: Oct 2021
+    description:
+      - Researched embedded devices, and developed advanced firmwares
+      - Dived deep into propietery RF communication protocols, and implemented SDKs for them
+      - Developed advanced embedded tools and testing systems
+skills:
+  - Security Research
+  - Networking Protocols
+  - Operating Systems
+  - C/C++
+  - Python
+  - Software Architecture
+  - System Design
+  - Data Analysis
+  - DevOps & Pipelines
+  - Web Development – React & Typescript
+
+qualities:
+  - Great Coummincation Skills
+  - Highly enthusiastic
+  - Autodidact
+  - Extremely Curious
+education:
+  - title: Rishionim High School
+    institute: Herzliya
+    period: 2014-2017
+    details:
+    - Computer Science & Chemistry
+    - Gvahim Program for Cyber Security
+  - title: Appollo course
+    institute: IDF School of cyber
+    period: 2018
+  - title: Self-taught web developer
+    period: 2020
+languages:
+  - "Hebrew - Native"
+  - "English - Fluent"
