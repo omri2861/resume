@@ -11,7 +11,7 @@ def main():
 
     result = template.render(resume_data)
 
-    with open("index.html", 'w', encoding='utf-8') as dest:
+    with open("public/index.html", 'w', encoding='utf-8') as dest:
         dest.write(result)
 
 
